@@ -1,0 +1,69 @@
+[#:miraj{:ns   miraj.polymer.layout.extensions
+         :defextensions true
+         :nss []
+         :lib  :miraj.polymer/layout
+         :name "app-layout"
+         :vendor :polymer
+         :base #:miraj{:assets #:miraj{:bower [{:cmd "PolymerElements/app-layout"}]
+                                       :href "/bower_components/"}
+                       :doc #:miraj{:short "Miraj Polymer App Layout Effects"
+                                    :href "https://www.webcomponents.org/element/PolymerElements/"}}
+         :styles [#:miraj{:def scroll-effects
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/app-scroll-effects.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short ""
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def blend
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/blend-background.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "While scrolling down, fade in the rear background layer and fade out the front background layer (opacity interpolated based on scroll position)."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def fade
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/fade-background.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Upon scrolling past a threshold, fade in the rear background layer and fade out the front background layer (opacity CSS transitioned over time)."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def material
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/material.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Shorthand for the waterfall, resize-title, blend-background, and parallax-background effects."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def parallax
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/parallax-background.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Vertically translate the background based on a factor of the scroll position."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def resize-snapped-title
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/resize-snapped-title.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Upon scrolling past a threshold, CSS transition the font size of a designated title element between two values."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def resize-title
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/resize-title.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Transform the font size of a designated title element between two values based on the scroll position."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  #:miraj{:def waterfall
+                          :assets #:miraj{:href "app-layout/app-scroll-effects/effects/waterfall.html"
+                                          :bower "PolymerElements/app-layout"
+                                          :version "0.10.7"}
+                          :doc #:miraj{:short "Toggles the shadow property in app-header when content is scrolled to create a sense of depth between the element and the content underneath."
+                                       :href "Polymer.AppScrollEffectsBehavior"}}
+
+                  ]}
+]
+

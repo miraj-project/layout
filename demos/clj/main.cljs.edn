@@ -1,0 +1,5 @@
+{:require [miraj.polymer.layout.demos.sample-content.sample-data]
+ :compiler-options {:optimizations :none
+                    :asset-path "/js"
+                    :output-dir "js"
+                    :output-to "js/main.js"}}

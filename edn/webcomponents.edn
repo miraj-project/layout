@@ -1,0 +1,98 @@
+[#:miraj{:ns  miraj.polymer.layout
+         :defelements true
+         :nss []
+         :refer-clojure {:exclude [list meta]}
+         :lib  :miraj.polymer.app
+         :name "app-elements"
+         :vendor :polymer
+         :base {:miraj/assets #:miraj{:bower "PolymerElements/app-layout"
+                                      :href "/bower_components/"}
+                :miraj/doc #:miraj{:short "Miraj Polymer App-Layout elements"
+                                   :href  "https://www.webcomponents.org/element/PolymerElements/"}}
+
+         :exports [#:miraj{:defn box
+                           :html-tag :app-box
+                           :assets #:miraj{:href "app-layout/app-box/app-box.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}
+                           :doc #:miraj{:short "app-box is a container element that can have scroll effects - visual effects based on scroll position. For example, the parallax effect can be used to move an image at a slower rate than the foreground."
+                                        :href "app-layout/app-box"}
+                           :extends Polymer.Element ;; Polymer.LegacyElement
+                           :categories []}
+
+                   #:miraj{:defn drawer
+                           :html-tag :app-drawer
+                           :doc #:miraj{:short "app-drawer is a navigation drawer that can slide in from the left or right."
+                                        :href "app-layout/app-drawer"}
+                           :assets #:miraj{:href "app-layout/app-drawer/app-drawer.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   #:miraj{:defn drawer-layout
+                           :html-tag :app-drawer-layout
+                           :doc #:miraj{:short
+ "app-drawer-layout is a wrapper element that positions an app-drawer and other content. When the viewport width is smaller than responsiveWidth, this element changes to narrow layout. In narrow layout, the drawer will be stacked on top of the main content. The drawer will slide in/out to hide/reveal the main content."
+                                        :href "app-layout/app-drawer-layout"}
+                           :assets #:miraj{:href "app-layout/app-drawer-layout/app-drawer-layout.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   #:miraj{:defn grid
+                           :html-tag :app-grid
+                           :doc #:miraj{:short
+"app-grid is a helper class useful for creating responsive, fluid grid layouts using custom properties. Because custom properties can be defined inside a @media rule, you can customize the grid layout for different responsive breakpoints."
+                                        :href "app-layout/app-grid"}
+                           :assets #:miraj{:href "app-layout/app-grid/app-grid.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   #:miraj{:defn header
+                           :html-tag :app-header
+                           :doc #:miraj{:short
+""
+                                        :href "app-layout/app-header"}
+                           :assets #:miraj{:href "app-layout/app-header/app-header.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   #:miraj{:defn header-layout
+                           :html-tag :app-header-layout
+                           :doc #:miraj{:short
+""
+                                        :href "app-layout/app-header-layout"}
+                           :assets #:miraj{:href "app-layout/app-header-layout/app-header-layout.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   ;; FIXME:  effects is an extension?
+;;                    #:miraj{:defn scroll-effects
+;;                            :html-tag :app-scroll-effects
+;;                            :doc #:miraj{:short
+;; ""
+;;                                         :href "app-layout/app-header-layout"}
+;;                            :assets #:miraj{:href "app-layout/app-header-layout/app-header-layout.html"
+;;                                            :bower "PolymerElements/app-layout"
+;;                                            :version "0.10.7"}}
+
+                   #:miraj{:defn scroll-position
+                           :html-tag :app-scrollpos-control
+                           :doc #:miraj{:short
+""
+                                        :href "app-layout/app-scrollpos-control"}
+                           :assets #:miraj{:href "app-layout/app-scrollpos-control/app-scrollpos-control.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+                   #:miraj{:defn toolbar
+                           :html-tag :app-toolbar
+                           :doc #:miraj{:short
+""
+                                        :href "app-layout/app-toolbar"}
+                           :assets #:miraj{:href "app-layout/app-toolbar/app-toolbar.html"
+                                           :bower "PolymerElements/app-layout"
+                                           :version "0.10.7"}}
+
+
+                   ]
+         }
+]
